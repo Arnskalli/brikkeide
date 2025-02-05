@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/train.css" />
+    <title>Brikkeide City</title>
+  </head>
+  <body>
+    <header>
+      <h1>BRIKKEIDE</h1>
+      <nav>
+        <ul>
+          <li><a href="./">Forside</a></li>
+          <li><a href="city.html">City</a></li>
+          <li><a href="images.html">Bilder</a></li>
+          <li><a href="train.html" class="menu-active">Tog</a></li>
+          <li><a href="about.html">Om</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro-container">
+        <h2>Brikkeide Railways</h2>
+        <p>
+          Brikkeide Railways (BR) frakter folk og gods rundt i Brikkeide. Vi er opptatte av en god infrastuktur og gode tilbud til være innbygere.
+          BR har i dag tre passasjertog som frakter innbygerne rundt i byen, ut til flyplassen og inn til sentrum.
+          Og to godstog som frakter kull fra kullgruven og ned til havnen, og gods til godsterminalen.
+        </p>
+        <p>
+          Byen er under planlegging og vil bli publisert utover høsten-24/vintern-25.
+          Under oppbygging av togbanen skal det plasseres ut sensorer som skal registrere togets posisjon.
+          Og togene skal bli styrt av microkontroller med oppsett av togtabeller.
+          Denne nettsiden skal på sikt vise posisjonen til togene i realtime i henholdt til posisjonen i legobyen.
+        </p>
+      </section>
+      <div class="train-container">
+        <aside class="aside-left">
+          <h3>Informasjon</h3>
+          <p>Ingen forsinkelser</p>
+          <p>Dette er bare nå en animasjon. Men planen er å sette opp et kart med realtime data fra togoppsettet i lego byen.</p>
+        </aside>
+        <section class="trainmap-section">
+          <div class="trainmap"></div>
+        </section>
+        <aside class="aside-right">
+          <h3>Informasjon</h3>
+          <details>
+            <summary>Linje 0 - Togtabell</summary>
+            Går stasjonene: 0-1-2-3-2-1-0
+          </details>
+        </aside>
+        <section class="grid-arrival">Arrival</section>
+        <section class="grid-departure">Departure</section>
+      </div>
+    </main>
+    <footer>&copy;Arnbrick&trade; 2024</footer>
+    <script type="module" src="./scripts/trainmap.js" charset="utf-8"></script>
+  </body>
+</html>
